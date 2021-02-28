@@ -1,9 +1,10 @@
 # Tool for working with indexedDB
 
-<!-- [![npm version](https://badge.fury.io/js/%40indexdb-store.svg)](https://badge.fury.io/js/%40indexdb-store) -->
 <div style="display:grid;grid-gap:1rem;grid-auto-flow:column;width:100%;justify-content:space-between; align-items:center;">
 <div>
-<a style="display:block;z-index:1;" href="https://badge.fury.io/js/indexdb-store"><img style="background:transparent;" src="https://badge.fury.io/js/%40indexdb-store.svg" alt="npm version" height="18"></a>
+  <a style="display:block;z-index:1;"  href="https://badge.fury.io/js/indexdb-store">
+    <img style="background:transparent;" src="https://badge.fury.io/js/indexdb-store.svg" alt="npm version" height="18">
+  </a>
 </div>
 <div>
 
