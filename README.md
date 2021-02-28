@@ -26,10 +26,36 @@ npm install indexdb-store
 ###### Script Tag
 
 ```html
-<script src="https://unpkg.com/indexdb-store@latest/dist/index.umd.js"></script>
-<script type="text/javascript">
-  console.log(ReactUtils.Cipher)
-</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>indexDBStore test</title>
+  </head>
+
+  <body>
+    <div>
+      <h1>indexDBStore</h1>
+    </div>
+    <script src="https://unpkg.com/indexdb-store@latest/dist/index.umd.js"></script>
+
+    <script>
+      const dbStore = indexDBStore.indexDBStore.createStore(
+        'test-utils',
+        'react-utils'
+      )
+      dbStore('readwrite', db => {
+        db.add({ hello: 'world' }, 'hello')
+      })
+      dbStore('readonly', db => {
+        db.get('hello').onsuccess = function () {
+          console.log({ res: this.result })
+        }
+      })
+    </script>
+  </body>
+</html>
 ```
 
 ###### ES6
