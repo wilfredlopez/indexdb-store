@@ -1,7 +1,7 @@
 {
   "name": "indexdb-store",
   "version": "1.0.0",
-  "description": "Tool for working with index db in a js Promises. written in Typescript",
+  "description": "Tool for working with indexedDB in a js Promises. written in Typescript",
   "main": "dist/index.js",
   "browser": "dist/index.umd.js",
   "module": "dist/index.es.js",

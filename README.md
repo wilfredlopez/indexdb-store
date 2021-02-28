@@ -1,9 +1,9 @@
-# Javascript Utility Functions
+# Tool for working with indexedDB
 
-<!-- [![npm version](https://badge.fury.io/js/%40wilfredlopez%2Freact-utils.svg)](https://badge.fury.io/js/%40wilfredlopez%2Freact-utils) -->
+<!-- [![npm version](https://badge.fury.io/js/%40indexdb-store.svg)](https://badge.fury.io/js/%40indexdb-store) -->
 <div style="display:grid;grid-gap:1rem;grid-auto-flow:column;width:100%;justify-content:space-between; align-items:center;">
 <div>
-<a style="display:block;z-index:1;" href="https://badge.fury.io/js/wilfredlopez%2Freact-utils"><img style="background:transparent;" src="https://badge.fury.io/js/%40wilfredlopez%2Freact-utils.svg" alt="npm version" height="18"></a>
+<a style="display:block;z-index:1;" href="https://badge.fury.io/js/indexdb-store"><img style="background:transparent;" src="https://badge.fury.io/js/%40indexdb-store.svg" alt="npm version" height="18"></a>
 </div>
 <div>
 
@@ -20,13 +20,13 @@
 ###### NPM
 
 ```
-npm install @wilfredlopez/react-utils
+npm install indexdb-store
 ```
 
 ###### Script Tag
 
 ```html
-<script src="https://unpkg.com/@wilfredlopez/react-utils@latest/dist/index.umd.js"></script>
+<script src="https://unpkg.com/indexdb-store@latest/dist/index.umd.js"></script>
 <script type="text/javascript">
   console.log(ReactUtils.Cipher)
 </script>
@@ -37,7 +37,7 @@ npm install @wilfredlopez/react-utils
 ### IndexDB Store
 
 ```ts
-import { indexDBStore } from '@wilfredlopez/react-utils'
+import { indexDBStore } from 'indexdb-store'
 
 const store = indexDBStore.createStore('WDB', 'myStore', {
   version: 1,
